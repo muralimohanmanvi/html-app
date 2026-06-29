@@ -8,5 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Show Files
+        run: ls -la
+
+      - name: Show Date
+        run: date
+
       - name: Welcome
         run: echo "Hello Murali, GitHub Actions is working!"
